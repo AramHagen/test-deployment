@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testDeployment": {
+    "test-deployment": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -79,13 +79,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "testDeployment:build:production"
+              "buildTarget": "test-deployment:build:production"
             },
             "development": {
-              "buildTarget": "testDeployment:build:development"
+              "buildTarget": "test-deployment:build:development"
             },
             "staging": {
-              "buildTarget": "testDeployment:build:staging"
+              "buildTarget": "test-deployment:build:staging"
             }
           },
           "defaultConfiguration": "development"
