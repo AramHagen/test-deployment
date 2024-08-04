@@ -9,7 +9,8 @@
     "test": "ng test",
     "serve:ssr:testDeployment": "node dist/test-deployment/server/server.mjs",
     "build:staging": "ng build --configuration=staging",
-    "start:staging": "ng serve --configuration=staging"
+    "start:staging": "ng serve --configuration=staging",
+    "deploy:gh": "ng build --configuration=production --base-href='https://AramHagen.github.io/test-deployment/' && ngh"
   },
   "private": true,
   "dependencies": {
